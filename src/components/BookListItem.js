@@ -9,20 +9,20 @@ const BookListItem = ({ book, userRole, handleRemoveBook }) => {
   const navigate = useNavigate();
 
   return (
-    <ListItem onClick={() => navigate(`/library_managemeny_system/books/borrow-return/${book._id}`)} style={{ cursor: 'pointer' }}>
+    <ListItem onClick={() => navigate(`/library_managemeny_system_react/books/borrow-return/${book._id}`)} style={{ cursor: 'pointer' }}>
       <ListItemText
         primary={`${book.title} by ${book.author}`}
         secondary={book.available ? 'Available' : 'Unavailable'}
       />
       {userRole === 'admin' && (
         <ListItemSecondaryAction>
-          <IconButton edge="end" aria-label="edit" onClick={(e) => { e.stopPropagation(); navigate(`/library_managemeny_system/books/edit/${book._id}`); }}>
+          <IconButton edge="end" aria-label="edit" onClick={(e) => { e.stopPropagation(); navigate(`/library_managemeny_system_react/books/edit/${book._id}`); }}>
             <EditIcon />
           </IconButton>
           <IconButton edge="end" aria-label="delete" onClick={(e) => { e.stopPropagation(); handleRemoveBook(book._id); }}>
             <DeleteIcon />
           </IconButton>
-          <IconButton edge="end" aria-label="borrow-return" onClick={(e) => { e.stopPropagation(); navigate(`/library_managemeny_system/books/borrow-return/${book._id}`); }}>
+          <IconButton edge="end" aria-label="borrow-return" onClick={(e) => { e.stopPropagation(); navigate(`/library_managemeny_system_react/books/borrow-return/${book._id}`); }}>
             <BookIcon />
           </IconButton>
         </ListItemSecondaryAction>

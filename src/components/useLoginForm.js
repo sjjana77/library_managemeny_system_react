@@ -62,7 +62,7 @@ const useLoginForm = () => {
                     dispatch(setAuthToken({ token, user }));
     
                     setErrors((prevErrors) => ({ ...prevErrors, server: '' }));
-                    navigate('/library_managemeny_system/books_catalog/');
+                    navigate('/library_managemeny_system_react/books_catalog/');
                 }
 
             } catch (error) {

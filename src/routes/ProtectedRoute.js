@@ -8,11 +8,11 @@ const ProtectedRoute = ({ children, adminOnly = false }) => {
 
   if (token) {
     if (adminOnly && user.role !== 'admin') {
-      return <Navigate to="/library_managemeny_system" />;
+      return <Navigate to="/library_managemeny_system_react" />;
     }
     return children;
   } else {
-    return <Navigate to="/library_managemeny_system" />;
+    return <Navigate to="/library_managemeny_system_react" />;
   }
 };
 

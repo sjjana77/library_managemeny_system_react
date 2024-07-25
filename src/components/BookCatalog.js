@@ -31,7 +31,7 @@ const BookCatalog = () => {
     } catch (error) {
       console.error('Error fetching books:', error);
       if (error.response && error.response.status === 401) {
-        navigate('/library_managemeny_system/');
+        navigate('/library_managemeny_system_react/');
       }
     }
   };
@@ -83,7 +83,7 @@ const BookCatalog = () => {
                 variant="contained"
                 color="primary"
                 component={Link}
-                to="/library_managemeny_system/books/add"
+                to="/library_managemeny_system_react/books/add"
                 style={{ marginBottom: '16px' }}
               >
                 Add New Book

@@ -125,7 +125,7 @@ const AddOrEditBook = () => {
     request
       .then(() => {
         setLoading(false);
-        navigate('/library_managemeny_system/books_catalog');
+        navigate('/library_managemeny_system_react/books_catalog');
       })
       .catch(() => {
         setError(id ? 'Error updating book' : 'Error adding book');
@@ -152,7 +152,7 @@ const AddOrEditBook = () => {
             <Grid item xs={6}>
               <Button
                 component={Link}
-                to="/library_managemeny_system/books_catalog/"
+                to="/library_managemeny_system_react/books_catalog/"
                 variant="contained"
                 color="primary"
                 style={{ marginTop: '16px' }}

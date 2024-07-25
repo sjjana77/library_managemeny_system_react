@@ -15,10 +15,10 @@ const Router = () => {
     <Routerr>
       <div style={{ margin: '0 20px' }}>
         <Routes>
-          <Route exact path="/library_managemeny_system" element={<Login />} />
-          <Route exact path="/library_managemeny_system/register" element={<Register />} />
+          <Route exact path="/library_managemeny_system_react" element={<Login />} />
+          <Route exact path="/library_managemeny_system_react/register" element={<Register />} />
           <Route
-            path="/library_managemeny_system/books_catalog"
+            path="/library_managemeny_system_react/books_catalog"
             element={
               <ProtectedRoute>
                 <Header />
@@ -27,7 +27,7 @@ const Router = () => {
             }
           />
           <Route
-            path="/library_managemeny_system/register_user"
+            path="/library_managemeny_system_react/register_user"
             element={
               <ProtectedRoute>
                 <Header />
@@ -36,7 +36,7 @@ const Router = () => {
             }
           />
           <Route
-            path="/library_managemeny_system/books/add"
+            path="/library_managemeny_system_react/books/add"
             element={
               <ProtectedRoute adminOnly={true}>
                 <Header />
@@ -45,7 +45,7 @@ const Router = () => {
             }
           />
           <Route
-            path="/library_managemeny_system/books/edit/:id"
+            path="/library_managemeny_system_react/books/edit/:id"
             element={
               <ProtectedRoute adminOnly={true}>
                 <Header />
@@ -54,7 +54,7 @@ const Router = () => {
             }
           />
           <Route
-            path="/library_managemeny_system/books/borrow-return/:bookId"
+            path="/library_managemeny_system_react/books/borrow-return/:bookId"
             element={
               <ProtectedRoute adminOnly={true}>
                 <Header />
@@ -63,7 +63,7 @@ const Router = () => {
             }
           />
           <Route
-            path="/library_managemeny_system/transactions"
+            path="/library_managemeny_system_react/transactions"
             element={
               <ProtectedRoute>
                 <Header />

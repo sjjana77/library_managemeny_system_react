@@ -180,7 +180,7 @@ const RegisterForm = () => {
                     <Grid item xs={7}>
                         <Button
                             component={Link}
-                            to="/library_managemeny_system/"
+                            to="/library_managemeny_system_react/"
                             variant="contained"
                             color="primary"
                             style={{ marginTop: 16, marginBottom: 16, float: 'right' }}

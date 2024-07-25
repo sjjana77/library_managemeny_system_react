@@ -13,7 +13,7 @@ export default function Header() {
     dispatch(clearAuthToken());
     localStorage.removeItem('token');
     localStorage.removeItem('user');
-    navigate('/library_managemeny_system');
+    navigate('/library_managemeny_system_react');
   };
 
   return (
@@ -27,7 +27,7 @@ export default function Header() {
             <Button
               color="inherit"
               component={Link}
-              to="/library_managemeny_system/books_catalog"
+              to="/library_managemeny_system_react/books_catalog"
               sx={{ border: '1px solid #fff', marginRight: '20px' }}
             >
               Books Catalog
@@ -35,7 +35,7 @@ export default function Header() {
             <Button
               color="inherit"
               component={Link}
-              to="/library_managemeny_system/transactions"
+              to="/library_managemeny_system_react/transactions"
               sx={{ border: '1px solid #fff', marginRight: '20px' }}
             >
               Transactions
@@ -43,7 +43,7 @@ export default function Header() {
             <Button
               color="inherit"
               component={Link}
-              to="/library_managemeny_system/register_user"
+              to="/library_managemeny_system_react/register_user"
               sx={{ border: '1px solid #fff', marginRight: '20px' }}
             >
               Register
@@ -69,7 +69,7 @@ export default function Header() {
             <Button
               color="inherit"
               component={Link}
-              to="/library_managemeny_system/"
+              to="/library_managemeny_system_react/"
               sx={{ border: '1px solid #fff', marginRight: '20px' }}
             >
               Login
@@ -77,7 +77,7 @@ export default function Header() {
             <Button
               color="inherit"
               component={Link}
-              to="/library_managemeny_system/register"
+              to="/library_managemeny_system_react/register"
               sx={{ border: '1px solid #fff' }}
             >
               Register

@@ -42,7 +42,7 @@ const LoginForm = () => {
                         <ErrorMessage message={errors.server} />
                         <Button
                             component={Link}
-                            to="/library_managemeny_system/register/"
+                            to="/library_managemeny_system_react/register/"
                             variant="contained"
                             color="primary"
                             style={{ marginTop: 16, marginBottom: 16, float: 'right' }}
